@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauss Calculator</title>
+    <style>
+        .column{
+            display:flex;
+            flex-direction: column;
+        }
+        .row{
+            display:flex;
+            flex-direction:row;
+        }
+        .el{
+            margin: 10px;
+            width:20px;
+            height:20px;
+            border:0;
+        }
+        .el > input{
+            width:20px;
+            height:20px;
+            border:1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <span style="font-size:10px;color:#ccc">designed by Adrian Vlasov</span>
+    <div>
+        <div class="row">
+            <div class="column">
+                <div class="el 1"><input type="text"></div>
+            </div>
+            <div class="column">
+                <div class="el 2"><input type="text"></div>
+            </div>
+            <div class="column">
+                <div class="el 3"><input type="text"></div>
+            </div>
+            <div class="column">
+                <div class="el 4"><input type="text"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="el 5"><input type="text"></div>
+            </div>
+            <div class="column">
+                <div class="el 6"><input type="text"></div>
+            </div>
+            <div class="column">
+                <div class="el 7"><input type="text"></div>
+            </div>
+            <div class="column">
+                <div class="el 8"><input type="text"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="el 9"><input type="text"></div>
+            </div>
+            <div class="column">
+                <div class="el 10"><input type="text"></div>
+            </div>
+            <div class="column">
+                <div class="el 11"><input type="text"></div>
+            </div>
+            <div class="column">
+                <div class="el 12"><input type="text"></div>
+            </div>
+        </div>
+    </div>
+    <button id='calc'>calculate</button>
+    <div class="j">
+        <div class="answer">
+            x : <span class="x"></span><br>
+            y : <span class="y"></span><br>
+            z : <span class="z"></span>
+        </div>
+        <br>
+        Steps:
+        <br>
+        <div class="steps"></div>
+    </div>
+
+
+
+    <script src="libs.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
